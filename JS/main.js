@@ -39,4 +39,10 @@ function changetext() {
 
   dd1.innerHTML = "Bonjour";
   dd2.innerHTML = "Sayonara";
+  //The attribute shown here .innerHTML accesses the HTML content within the element(dd1), in this case, that's everything inside the div, which is text.
+}
+
+function changetextcolor() {
+  document.getElementById("d1").style.color = "magenta";
+  document.getElementById("d2").style.color = "#ff0000";
 }
