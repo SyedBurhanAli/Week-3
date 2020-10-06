@@ -1,0 +1,42 @@
+Style color Property
+
+Definition and Usage
+The color property sets or returns the color of the text.
+
+Syntax
+Return the color property:
+object.style.color
+
+Set the color property:
+object.style.color = "color|initial|inherit"
+
+
+Property Values
+Value	Description
+color	Specifies the color of the text. Look at CSS Color Values for a complete list of possible color values
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+
+
+Example
+Return the text-color of a <p> element:
+
+alert(document.getElementById("myP").style.color);
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP" style="color:red;">This is an example paragraph.</p>
+
+<button type="button" onclick="myFunction()">Return text color of p</button>
+
+<script>
+function myFunction() {
+  alert(document.getElementById("myP").style.color);
+}
+</script>
+
+</body>
+</html>
