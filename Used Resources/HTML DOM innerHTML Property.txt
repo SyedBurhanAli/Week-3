@@ -1,0 +1,81 @@
+Example
+Change the HTML content of a <p> element with id="demo":
+
+document.getElementById("demo").innerHTML = "Paragraph changed!";
+
+
+Definition and Usage
+The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+
+
+
+Syntax
+Return the innerHTML property:
+HTMLElementObject.innerHTML
+
+Set the innerHTML property:
+HTMLElementObject.innerHTML = text
+
+Property Values
+Value	Description
+text	Specifies the HTML content of an element
+
+
+Technical Details
+Return Value:	A String, representing the HTML content of an element
+
+
+----------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP">I am a paragraph.</p>
+
+<p>Click the button get the HTML content of the p element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myP").innerHTML;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
+
+----------------------------------------
+
+
+Example
+Delete the HTML content of a <p> element with id="demo":
+
+document.getElementById("demo").innerHTML = "";  // Replaces the content of <p> with an empty string
+
+----------------------------------------
+
+
+Example
+Change the HTML content, URL, and target of a link:
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<a id="myAnchor" href="http://www.microsoft.com">Microsoft</a>
+<button onclick="myFunction()">Change link</button>
+ 
+<script>
+function myFunction() {
+  document.getElementById("myAnchor").innerHTML = "W3Schools";
+  document.getElementById("myAnchor").href = "https://www.w3schools.com";
+  document.getElementById("myAnchor").target = "_blank";
+}
+</script>
+
+</body>
+</html> 
